@@ -19,10 +19,12 @@ You can clone this repository, install dependencies using Anaconda and download 
 model together with a dataset  
  with the following commands:
 
-`git clone https://github.com/Ghadjeres/DeepBach.git`
-`cd DeepBach`
-`conda env create --name deepbach_pytorch -f environment.yml`
-`bash dl_dataset_and_models.sh`
+```
+git clone https://github.com/Ghadjeres/DeepBach.git;
+cd DeepBach;
+conda env create --name deepbach_pytorch -f environment.yml;
+bash dl_dataset_and_models.sh;
+```
 
 This will create a conda env named `deepbach_pytorch`.
 
@@ -34,7 +36,7 @@ Open a four-part chorale. Press enter on the server address, a list of computed 
  called by music21](http://web.mit.edu/music21/doc/moduleReference/moduleEnvironment.html). On Ubuntu you can eg. use MuseScore:
 
 ```shell
-sudo apt install musescore
+sudo apt install musescore;
 python -c 'import music21; music21.environment.set("musicxmlPath", "/usr/bin/musescore")'
 ```
 
